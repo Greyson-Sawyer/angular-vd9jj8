@@ -5,6 +5,8 @@
   grid-auto-rows: minmax(300px, auto);
   grid-template-columns: repeat(auto-fill, minmax(600px, auto));
   gap: 0.5rem; */
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
