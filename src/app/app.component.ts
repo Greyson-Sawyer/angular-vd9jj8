@@ -9,9 +9,7 @@ import { PagesService } from './services/pages.service';
 export class AppComponent {
   name = 'Angular';
 
-  constructor(public pagesService: PagesService) {}
+  constructor() {}
 
-  get pages() {
-    return this.pagesService.pages;
-  }
+
 }
