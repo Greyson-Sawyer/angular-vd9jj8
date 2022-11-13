@@ -1,0 +1,16 @@
+<p id="greyson-sawyer-text">GREYSON SAWYER</p>
+<span class="spacer"></span>
+<p
+  class="nav-btn"
+  [ngClass]="{ active: isTabActive('portfolio') }"
+  (click)="selectTab('portfolio')"
+>
+  PORTFOLIO
+</p>
+<p
+  class="nav-btn"
+  [ngClass]="{ active: isTabActive('contact') }"
+  (click)="selectTab('contact')"
+>
+  CONTACT
+</p>
