@@ -5,7 +5,9 @@
   grid-auto-rows: minmax(300px, auto);
   grid-template-columns: repeat(auto-fill, minmax(600px, auto));
   gap: 0.5rem; */
-  height: 100%;
-  width: 100%;
-  padding-bottom: 0.5rem;
+}
+
+footer {
+  height: 0.5rem;
+  background-color: white;
 }
