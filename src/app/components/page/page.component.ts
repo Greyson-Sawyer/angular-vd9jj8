@@ -21,7 +21,7 @@ export class PageComponent implements AfterViewInit {
   @Input('page') page: Page;
   @ViewChild('heroVideo') heroVideo: ElementRef<HTMLVideoElement>;
 
-  titleTop = '30vmin'
+  titleTop = '0px'
 
   range: {
     start: number;
