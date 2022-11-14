@@ -32,7 +32,7 @@ export class PageComponent implements AfterViewInit {
 
     this.parallaxService.$scrollAmount.subscribe((scrollY: number) => {
       this.range = {
-        start: this.el.nativeElement.offsetHeight,
+        start: this.el.nativeElement.offsetTop,
         end: this.el.nativeElement.offsetTop + this.el.nativeElement.offsetHeight
       }
       console.log(this.range)
