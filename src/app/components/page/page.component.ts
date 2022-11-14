@@ -21,7 +21,7 @@ export class PageComponent implements AfterViewInit {
   @Input('page') page: Page;
   @ViewChild('heroVideo') heroVideo: ElementRef<HTMLVideoElement>;
 
-  titleTop = '0px'
+  titleTop = 'calc(((100vw - 6px) / (16 / 9) / 2 ))'
 
   startLine: number
 
@@ -32,7 +32,6 @@ export class PageComponent implements AfterViewInit {
   }
 
   constructor(private parallaxService: ParallaxService, private el: ElementRef) {
-this.setRange()
 
     this.parallaxService.$scrollAmount.subscribe((scrollY: number) => {
       this.setRange()
@@ -61,7 +60,7 @@ this.setRange()
       end: this.el.nativeElement.offsetTop + this.el.nativeElement.offsetHeight
     }
     this.startLine = (this.el.nativeElement.offsetWidth / (16 / 9)) /2
-    this.titleTop = `${this.startLine}px`
+
   }
 
 
