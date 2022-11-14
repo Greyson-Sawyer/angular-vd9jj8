@@ -24,7 +24,7 @@ export class PageComponent implements AfterViewInit {
   titleTop = '0px'
 
   startLine: number
-  finishLine: number
+
 
   range: {
     start: number;
@@ -32,6 +32,7 @@ export class PageComponent implements AfterViewInit {
   }
 
   constructor(private parallaxService: ParallaxService, private el: ElementRef) {
+this.setRange()
 
     this.parallaxService.$scrollAmount.subscribe((scrollY: number) => {
       this.setRange()
@@ -40,7 +41,7 @@ export class PageComponent implements AfterViewInit {
       }
 
       else if (scrollY >= this.range.end) {
-        this.titleTop = `${this.finishLine}px`
+        this.titleTop = `calc(100% - ${this.startLine}px)`
       }
       else  {
         this.titleTop = `${this.startLine + scrollY}px`
@@ -59,8 +60,8 @@ export class PageComponent implements AfterViewInit {
       start: this.el.nativeElement.offsetTop,
       end: this.el.nativeElement.offsetTop + this.el.nativeElement.offsetHeight
     }
-    this.startLine = (this.el.nativeElement.offsetWidth / (16 / 9)) /2 + this.range.start
-    this.finishLine
+    this.startLine = (this.el.nativeElement.offsetWidth / (16 / 9)) /2
+    this.titleTop = `${this.startLine}px`
   }
 
 
