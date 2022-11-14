@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationService } from '../../services/navigation.service';
+
+import { NavigationService, TabName } from '../../services/navigation.service';
 
 @Component({
   selector: 'app-header',
@@ -11,11 +12,15 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {}
 
-  isTabActive(tabName: 'portfolio' | 'contact') {
+  isTabActive(tabName: TabName) {
     return tabName === this.nav.activeTab;
   }
 
-  selectTab(tabName: 'portfolio' | 'contact') {
+  selectTab(tabName: TabName) {
     this.nav.selectTab(tabName);
+  }
+
+  get useBlackText() {
+    return this.nav.activeTab !== 'portfolio';
   }
 }

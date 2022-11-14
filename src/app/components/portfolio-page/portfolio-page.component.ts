@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PagesService } from 'src/app/services/pages.service';
+import { PagesService } from '../../services/pages.service';
 
 @Component({
   selector: 'portfolio-page',
@@ -7,7 +7,7 @@ import { PagesService } from 'src/app/services/pages.service';
   styleUrls: ['./portfolio-page.component.css'],
 })
 export class PortfolioPageComponent implements OnInit {
-  constructor(private pagesService: PagesService) {}
+  constructor(public pagesService: PagesService) {}
 
   ngOnInit() {}
 

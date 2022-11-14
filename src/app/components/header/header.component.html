@@ -1,16 +1,20 @@
-<p id="greyson-sawyer-text">GREYSON SAWYER</p>
+<p id="greyson-sawyer-text" [ngClass]="{ 'dark-text': useBlackText }">
+  GREYSON SAWYER
+</p>
 <span class="spacer"></span>
-<p
+<a
+  routerLink="/"
   class="nav-btn"
-  [ngClass]="{ active: isTabActive('portfolio') }"
+  [ngClass]="{ active: isTabActive('portfolio'), 'dark-text': useBlackText }"
   (click)="selectTab('portfolio')"
 >
   PORTFOLIO
-</p>
-<p
+</a>
+<a
+  routerLink="/contact"
   class="nav-btn"
-  [ngClass]="{ active: isTabActive('contact') }"
+  [ngClass]="{ active: isTabActive('contact'), 'dark-text': useBlackText }"
   (click)="selectTab('contact')"
 >
   CONTACT
-</p>
+</a>
