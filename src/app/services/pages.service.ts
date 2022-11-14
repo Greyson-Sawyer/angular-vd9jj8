@@ -35,7 +35,7 @@ export class PagesService {
       ],
     },
     {
-      title: 'Emma',
+      title: 'Emma 2',
       shotBy: '@AndrewGSalama',
       creatorLink: 'https://www.instagram.com/andrewgsalama/',
       videoSrc:

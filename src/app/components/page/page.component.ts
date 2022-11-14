@@ -21,28 +21,41 @@ export class PageComponent implements AfterViewInit {
   @Input('page') page: Page;
   @ViewChild('heroVideo') heroVideo: ElementRef<HTMLVideoElement>;
 
-  titleTop = '50%'
+  titleTop = '30vmax'
 
-  range = {
-    start: 0,
-    end: 0,
+  range: {
+    start: number;
+    end: number
   }
 
   constructor(private parallaxService: ParallaxService, private el: ElementRef) {
 
     this.parallaxService.$scrollAmount.subscribe((scrollY: number) => {
-      this.range = {
-        start: this.el.nativeElement.offsetTop,
-        end: this.el.nativeElement.offsetTop + this.el.nativeElement.offsetHeight
+      this.setRange()
+      if (scrollY <= this.range.start) {
+        this.titleTop = `${this.range.start-500}px`
       }
-      console.log(this.range)
+
+      if (scrollY >= this.range.end) {
+        this.titleTop = `${this.range.end}px`
+      }
+      if (scrollY >= this.range.start && scrollY <= this.range.end) {
+        this.titleTop = '50%'
+      }
     })
   }
 
   ngAfterViewInit() {
-
+    this.setRange()
     this.heroVideo.nativeElement.muted = true;
 
+  }
+
+  setRange(){
+    this.range = {
+      start: this.el.nativeElement.offsetTop,
+      end: this.el.nativeElement.offsetTop + this.el.nativeElement.offsetHeight
+    }
   }
 
 
