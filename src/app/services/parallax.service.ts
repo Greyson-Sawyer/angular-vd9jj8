@@ -13,7 +13,6 @@ export class ParallaxService {
     this.renderer = this.rendererFactory2.createRenderer(null, null);
     this.renderer.listen('window', 'scroll', (e) => {
       this.scrollAmount = window.scrollY;
-
       this.$scrollAmount.next(window.scrollY);
     });
     this.renderer.listen('window', 'resize', (e) => {

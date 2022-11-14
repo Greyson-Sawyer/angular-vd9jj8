@@ -21,16 +21,26 @@ export class PageComponent implements AfterViewInit {
   @Input('page') page: Page;
   @ViewChild('heroVideo') heroVideo: ElementRef<HTMLVideoElement>;
 
-  titleTop = '0px'
+  titleTop = '50%'
+
+  range = {
+    start: 0,
+    end: 0,
+  }
 
   constructor(private parallaxService: ParallaxService, private el: ElementRef) {
+
     this.parallaxService.$scrollAmount.subscribe((scrollY: number) => {
-      const a = scrollY
-      console.log(a)
+      this.range = {
+        start: this.el.nativeElement.offsetHeight,
+        end: this.el.nativeElement.offsetTop + this.el.nativeElement.offsetHeight
+      }
+      console.log(this.range)
     })
   }
 
   ngAfterViewInit() {
+
     this.heroVideo.nativeElement.muted = true;
 
   }
