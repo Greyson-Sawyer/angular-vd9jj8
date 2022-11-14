@@ -6,21 +6,19 @@
   }}</a>
 </div>
 
-<div class="page">
-  <div class="video-container">
-    <video #heroVideo autoplay muted playsinline loop width="100%">
-      <source [src]="page.videoSrc" [type]="page.videoType" />
-    </video>
-  </div>
-
-  <div
-    *ngFor="let image of page.images"
-    class="image"
-    loading="lazy"
-    parallax
-    [style.backgroundImage]="'url(' + image + ')'"
-  ></div>
+<div class="video-container">
+  <video #heroVideo autoplay muted playsinline loop width="100%">
+    <source [src]="page.videoSrc" [type]="page.videoType" />
+  </video>
 </div>
+
+<div
+  *ngFor="let image of page.images"
+  class="image"
+  loading="lazy"
+  parallax
+  [style.backgroundImage]="'url(' + image + ')'"
+></div>
 
 <!-- <div
 *ngFor="let image of page.images"
