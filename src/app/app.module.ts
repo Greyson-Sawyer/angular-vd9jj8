@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { APP_BASE_HREF } from '@angular/common';
 
 // Routing
 import { AppRoutingModule } from './app-routing.module';
@@ -26,5 +27,6 @@ import { PortfolioPageComponent } from './components/portfolio-page/portfolio-pa
     PortfolioPageComponent,
   ],
   bootstrap: [AppComponent],
+  providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
 })
 export class AppModule {}
