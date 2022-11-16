@@ -10,17 +10,39 @@
   align-content: center;
   justify-items: center;
   z-index: 10000;
-  background: white;
+  /* background: white; */
 }
 
 .loadingio-spinner-fluid-f8n60xey3eh {
-  transform: scale(0.75);
+  transform: scale(0.7);
+  animation: fade-out 800ms cubic-bezier(0.16, 1, 0.3, 1) 1500ms forwards;
+}
+
+@keyframes shrink-reveal {
+  0% {
+    clip-path: circle(100%);
+  }
+  100% {
+    clip-path: circle(0%);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .text {
   color: rgba(0, 0, 0, 0.87);
   font-family: 'Jaldi';
-  margin-top: 2rem;
+  margin-top: 0.5rem;
+  /* font-weight: 700; */
+  font-size: 1.2rem;
+  animation: fade-out 800ms cubic-bezier(0.16, 1, 0.3, 1) 1500ms forwards;
 }
 
 @keyframes ldio-to104o8n2v9 {

@@ -10,6 +10,6 @@ export class AppComponent {
   isLoading = true;
 
   constructor() {
-    setTimeout(() => (this.isLoading = false), 1500);
+    setTimeout(() => (this.isLoading = false), 2300);
   }
 }
