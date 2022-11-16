@@ -14,3 +14,21 @@
   font-family: 'Jaldi';
   font-size: 1rem;
 }
+
+strong {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 400;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.title,
+.city {
+  color: rgba(0, 0, 0, 0.72);
+}
+
+.email {
+  /* margin-top: 1rem; */
+}

@@ -7,7 +7,15 @@
 </div>
 
 <div class="video-container">
-  <video #heroVideo autoplay muted playsinline loop width="100%">
+  <video
+    #heroVideo
+    autoplay
+    muted
+    playsinline
+    loop
+    width="100%"
+    [style.backgroundColor]="page.backgroundColor"
+  >
     <source [src]="page.videoSrc" [type]="page.videoType" />
   </video>
 </div>
