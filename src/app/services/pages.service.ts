@@ -15,6 +15,24 @@ export interface Page {
 export class PagesService {
   pages: Page[] = [
     {
+      title: 'Midnight Noon',
+      shotBy: '@AndrewGSalama',
+      creatorLink: 'https://www.instagram.com/andrewgsalama/',
+      videoSrc:
+        'https://firebasestorage.googleapis.com/v0/b/greyson-color.appspot.com/o/Midnight%20Noon%2FMidnight%20Noon%20-%20Banner.mov?alt=media&token=33d5c7e0-838d-454a-b0c3-0ad5616a40b0',
+      videoType: 'video/mp4',
+      images: [
+        'https://picsum.photos/1920/1080',
+        'https://picsum.photos/1920/1080',
+        'https://picsum.photos/1920/1080',
+        'https://picsum.photos/1920/1080',
+        'https://picsum.photos/1920/1080',
+        'https://picsum.photos/1920/1080',
+        'https://picsum.photos/1920/1080',
+        'https://picsum.photos/1920/1080',
+      ],
+    },
+    {
       title: 'Emma',
       shotBy: '@AndrewGSalama',
       creatorLink: 'https://www.instagram.com/andrewgsalama/',
@@ -32,24 +50,6 @@ export class PagesService {
         'https://firebasestorage.googleapis.com/v0/b/greyson-color.appspot.com/o/emma%2Femma_1.28.1.jpg?alt=media&token=b3693d56-3774-4e92-9f9a-33d089c216a3',
         'https://firebasestorage.googleapis.com/v0/b/greyson-color.appspot.com/o/emma%2Femma_1.34.5.jpg?alt=media&token=22010783-4829-49ae-a3a7-938c0831eb89',
         'https://firebasestorage.googleapis.com/v0/b/greyson-color.appspot.com/o/emma%2Femma_1.34.2.jpg?alt=media&token=1c0eb3c8-b98c-42b3-8119-b54d34ffd851',
-      ],
-    },
-    {
-      title: 'Emma 2',
-      shotBy: '@AndrewGSalama',
-      creatorLink: 'https://www.instagram.com/andrewgsalama/',
-      videoSrc:
-        'https://firebasestorage.googleapis.com/v0/b/greyson-color.appspot.com/o/emma%2Femma_v23.mp4?alt=media&token=43c35544-67ec-4537-bb50-4cadabc3cfba',
-      videoType: 'video/mp4',
-      images: [
-        'https://picsum.photos/1920/1080',
-        'https://picsum.photos/1920/1080',
-        'https://picsum.photos/1920/1080',
-        'https://picsum.photos/1920/1080',
-        'https://picsum.photos/1920/1080',
-        'https://picsum.photos/1920/1080',
-        'https://picsum.photos/1920/1080',
-        'https://picsum.photos/1920/1080',
       ],
     },
   ];
