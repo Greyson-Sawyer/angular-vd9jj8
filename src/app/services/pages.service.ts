@@ -32,7 +32,7 @@ export class PagesService {
         'https://firebasestorage.googleapis.com/v0/b/greyson-color.appspot.com/o/Midnight%20Noon%2F1.65.2_1.65.2.jpg?alt=media&token=330bc863-1ca6-4e62-9e0e-b644d8777b3f',
         'https://firebasestorage.googleapis.com/v0/b/greyson-color.appspot.com/o/Midnight%20Noon%2F1.89.2_1.89.2.jpg?alt=media&token=61dc8e3e-15bb-4998-ac7d-88f9621ef929',
         'https://firebasestorage.googleapis.com/v0/b/greyson-color.appspot.com/o/Midnight%20Noon%2F1.108.1_1.108.1.jpg?alt=media&token=da0a6e44-fb37-4675-b676-830aa4ca61b7',
-        'https://firebasestorage.googleapis.com/v0/b/greyson-color.appspot.com/o/Midnight%20Noon%2F1.143.1_1.143.1.jpg?alt=media&token=d62d1e2b-d2d7-48db-b019-593ab3870c75',
+
         'https://firebasestorage.googleapis.com/v0/b/greyson-color.appspot.com/o/Midnight%20Noon%2F1.149.1_1.149.1.jpg?alt=media&token=cb41b266-5210-4738-8d4e-80c735a74ba4',
         'https://firebasestorage.googleapis.com/v0/b/greyson-color.appspot.com/o/Midnight%20Noon%2F1.155.1_1.155.1.jpg?alt=media&token=abb84d61-a87f-423a-ace7-e29237985903',
       ],
