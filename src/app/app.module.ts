@@ -11,6 +11,7 @@ import { ParallaxDirective } from './directives/parallax.directive';
 
 // Components
 import { AppComponent } from './app.component';
+import { LoadingScreenComponent } from './components/loading-screen/loading-screen.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PageComponent } from './components/page/page.component';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
@@ -20,6 +21,7 @@ import { PortfolioPageComponent } from './components/portfolio-page/portfolio-pa
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   declarations: [
     AppComponent,
+    LoadingScreenComponent,
     ParallaxDirective,
     HeaderComponent,
     PageComponent,

@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'Angular';
+  isLoading = true;
 
-  constructor() {}
+  constructor() {
+    setTimeout(() => (this.isLoading = false), 1500);
+  }
 }
